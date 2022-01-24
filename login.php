@@ -11,7 +11,7 @@ if(isset($_POST)){
     
     //recoger datos del formulario
    $email = trim($_POST['email']);
-   $password = $_POST['password'];
+   $password = trim($_POST['password']);
    
    //consulta para comprobrar las credenciales del usuario
    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
