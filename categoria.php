@@ -2,7 +2,7 @@
 <?php require_once 'includes/helper.php'; ?>
 <?php
 	$categoria_actual = conseguirCategoria($db, $_GET['id']);
-
+    // condicional que permite identificar si no existe la categoria solicitada redireccionara a index.php
 	if(!isset($categoria_actual['id'])){
 		header("Location: index.php");
 	}
@@ -10,7 +10,7 @@
 
 <?php require_once './includes/cabecera.php';?>
 <?php require_once './includes/lateral.php';?>
-<!-- caja principal de contenido -->
+<!-- caja principal de contenido para las entradas de una categoria especifica -->
 <div id="principal">
 
 
@@ -21,7 +21,7 @@
                         while($entrada = mysqli_fetch_assoc($entradas)):
                 ?>
                         <article class="entrada">
-                            <a href="">
+                            <a href="entrada.php?id=<?=$entrada['id']?>">
                                 <h2><?=$entrada['titulo']?></h2>
                                 <span class="fecha">
                                     <?=$entrada['categoria'].' | | '.$entrada['fecha']?>

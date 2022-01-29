@@ -7,7 +7,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <title>Web Felipe Perez</title>
+        <title>Foro videojuegos</title>
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     </head>
     <body>
@@ -15,7 +15,7 @@
         <header id="cabecera">
             <div id="logo">
                 <a href="index.php">
-                    Foro Felipe Perez
+                     Foro videojuegos
                 </a>
             </div>
             
@@ -39,9 +39,6 @@
                                 endwhile;
                             endif;
                         ?>
-                    <li>
-                        <a href="index.php">Sobre mi</a>
-                    </li>
                     <li>
                         <a href="index.php">Contacto</a>
                     </li>

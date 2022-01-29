@@ -161,6 +161,15 @@ label,
         cursor: pointer;
         width: 160px;
     }
+    .botons{
+        margin-top:10px;
+        display: block;
+        border-radius: 1px;
+        background: #007ee5;
+        width: 160px;
+        cursor: pointer;
+        color:#F4F4F4 !important;
+    }
     
     .boton{
         width: 150px;
